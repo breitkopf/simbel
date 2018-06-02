@@ -20,7 +20,6 @@ Welcome to the Simbel Installer. What would you like to do?
 Your choice> " choice
 
     if [ "$choice" = 1 ]; then
-	tmux kill-session -t geth
 	#tmux kill-session -t ipfs
 	echo -e "\033[1;32mSimbel will now attempt to install necessary dependencies on your machine. \033[0m"
 
@@ -244,6 +243,4 @@ python3 gui.py
 done
 
 echo -e "\033[1;32mCongratulations! Simbel has been installed on your machine. I will now attempt to start the GUI. \033[0m"
-
-python3 gui.py
 
